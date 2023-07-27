@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login</title>
+    <link rel="stylesheet" href="login.css" />
+
+    <script>
+      function myFunction() {
+        var em = document.forms["myForm"]["email"].value;
+        var pw = document.forms["myForm"]["password"].value;
+        if (em == "sample@gmail.com" && pw == "sample123") {
+          window.location.href = "index.html";
+          return false;
+        } else {
+          alert("Invalid User Name and Password");
+        }
+      }
+
+      function noBack() {
+        window.history.forward();
+      }
+    </script>
+  </head>
+
+  <body>
+  <div class="main">
+    <h2 class="logo">Login Page!</h2>
+    <div class="content">
+      <div class="form1">
+        <form name="myForm" method="post">
+          <h2>Login Here</h2>
+          <input type="email" name="email" placeholder="Email Address" />
+          <input type="password" name="password" placeholder="Password" /><br />
+        </form>
+        <button class="btn" name="log" onclick="myFunction()">
+          <h3>Login</h3>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <body
+    onLoad="noBack();"
+    onpageshow="if (event.persisted) noBack();"
+    onUnload=""
+  ></body>
+</html>

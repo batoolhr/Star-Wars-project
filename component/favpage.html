@@ -1,0 +1,33 @@
+<div class="content">
+  <div ng-controller="puchController" ng-model="conditional_number">
+    <h1>favourite character</h1>
+    <p class="none" ng-show="values.length==0">Nothing found!</p>
+
+    <table class="styled-table">
+      <thead ng-show="values.length>0">
+        <tr>
+          <th>Name</th>
+          <th>Mass</th>
+          <th>birth year</th>
+          <th>gender</th>
+          <th>height</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tr ng-repeat="val in values">
+        <td>{{val.name}}</td>
+        <td>{{val.mass}}</td>
+        <td>{{val.birth_year}}</td>
+        <td>{{val.gender}}</td>
+        <td>{{val.height}}</td>
+        <td ng-controller="DeleteCon">
+          <i
+            ng-click="Delete(val.name)"
+            class="fa fa-trash-o icon"
+            style="font-size: 30px"
+          ></i>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>

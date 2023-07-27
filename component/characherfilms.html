@@ -1,0 +1,41 @@
+<div ng-controller="filmController">
+  <div ng-controller="testController">
+    <div id="loader" ng-show="test.hidden"></div>
+
+    <div
+      ng-controller="hidShowcon"
+      ng-show="!test.hidden"
+      class="content"
+      class="animate-bottom"
+    >
+      <div ng-controller="puchController">
+        <h1>Main Character</h1>
+
+        <div ng-repeat="item in items" class="content-box">
+          <label>{{item.name}}</label>
+          <button ng-click="showitem(item.name)">Detail</button>
+          <i
+            id="box1"
+            ng-click="push(item)"
+            class="heart fa fa-heart"
+            style="font-size: 30px"
+          ></i>
+        </div>
+
+        <div ng-show="hiddenshow" class="box">
+          <div class="card">
+            <p ng-model="name"><i> Name :</i> {{name}}</p>
+            <p ng-model="mass"><i>Mass :</i> {{mass}}</p>
+            <p ng-model="height"><i>height :</i> {{height}}</p>
+            <p ng-model="birth_year"><i>Birth year :</i> {{birth_year}}</p>
+            <p ng-model="gender"><i> gender :</i> {{gender}}</p>
+            <h2>Acted in</h2>
+            <div ng-repeat="t in ti  track by $index">
+              <p>{{t}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

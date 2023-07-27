@@ -1,0 +1,300 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+  }
+
+  nav {
+    background: #020230;
+    padding: 5px 350px;
+    
+    }
+  ul {
+    list-style-type: none;
+  }
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  a:hover {
+    color: #020230;
+    background-color: #fff;
+    border-radius: 1rem;
+    padding: 10px;
+  }
+
+  .menu li {
+    font-size: 16px;
+    padding: 15px 5px;
+    white-space: nowrap;
+    font-weight: 700;
+  }
+  .menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  
+  
+  .container{
+      position: relative;
+      background-color: #020230;
+      min-height: 92.2vh;
+      display: flex;
+      align-items: center;
+
+  }
+
+
+
+  .home{
+    margin: 50px;
+    width: 50%;
+    padding: 133px 168px; 
+    color: white;
+} 
+.home p{
+  padding-top: 10px;
+}
+  
+
+  img{
+  
+      width: 100%;
+      padding-right: 70px;
+    }
+
+  .home h1{
+    font-weight: bold;
+    margin-bottom: 25px;
+    font-size: 2rem;
+    color: azure;
+  } 
+
+
+
+  table{
+    padding: 10px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    width: 80%;
+    
+  }
+
+  .styled-table {
+    
+
+        margin-left: auto;
+        margin-right: auto;
+        border-collapse: collapse;
+        font-family: sans-serif;
+        min-width: 500px;
+
+}
+
+
+
+
+.styled-table th{
+    padding: 10px;
+}
+
+  .styled-table  tr {
+    background-color: #fff;
+    color: #020230;
+    text-align: left;
+
+  }
+
+.styled-table  td  {
+
+    text-align: left;
+    height: 50px;
+    width: 160px;
+}
+
+.styled-table tr,
+.styled-table td {
+    padding: 12px 15px;
+
+}
+
+
+
+.styled-table tbody tr {
+    border-bottom: 1px solid #020230;
+}
+
+
+.styled-table tbody tr:last-of-type  {
+    border-bottom: 2px solid #020230;
+} 
+
+
+
+.detail p{
+  color: #f3f3f3;
+}
+
+
+
+
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 120px;
+  height: 120px;
+  margin: -76px 0 0 -76px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  -webkit-animation: spin 0.89s linear infinite;
+  animation: spin  0.85s  ;
+  
+}
+
+
+/* Add animation to " Main page " */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  animation-name: animatebottom;
+  
+}
+
+.content{
+  min-height: 110vh;
+  background-color: #020230;
+}
+
+.content h1{
+text-align: center;
+color:#fff ;
+padding-top: 35px;
+padding-bottom: 30px;
+text-transform: capitalize;
+}
+
+.icon:hover{
+  cursor: pointer;
+  background-color: #f3f3f3;
+}
+
+
+.none{
+  text-align: center;
+  margin: 50px 60px;
+  color: #fff;
+  font-size: 30px;
+
+}
+
+
+.btn{
+  border-radius: 1rem;
+  color: #020230;
+  background-color: #fff;
+  text-align: center;
+  padding: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  outline: none;
+  border: none;
+}
+
+.btn:hover{
+  cursor: pointer;
+  background-color: #020230;
+  color: #fff;
+}
+
+
+
+
+
+.content-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.content-box label{
+  background-color: #fff;
+  color: #020230;
+  padding: 10px;
+  border-radius: 1rem;
+  margin-right:40px;
+  display: block;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 20%;
+  text-align: center;
+  margin-bottom: 10px;
+
+  font-weight: 700;
+  /* margin-bottom: 5px; */
+}
+.content-box button{
+  width: 10%;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  color: #020230;
+  border: none;
+  outline: none;
+  font-weight: 700;
+  text-align: center;
+  border-radius: 1rem;
+  margin-right: 40px;
+  
+}
+
+.content-box button:hover{
+  color: #fff;
+  cursor: pointer;
+  background-color: #020230;
+}
+.content-box i{
+
+  color: #fff;
+}
+
+.content-box i:hover{
+  color: #020230;
+  cursor: pointer;
+}
+
+
+.box-con{
+  min-height: 110vh;
+}
+
+
+
+.card {
+  margin-top: 20px;
+  padding-top: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 38%;
+  margin-left:470px;
+  text-align: center;
+  font-family: arial;
+  padding: 10px;
+  color: #020230;
+  border-radius: 0.9rem;
+  
+}
+.card i{
+  font-weight: 700;
+  
+}
+
+

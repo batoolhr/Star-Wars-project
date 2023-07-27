@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html ng-app="myApp" ng-controller="peopleController">
+  <head>
+    <title>SWAPI</title>
+    <!-- import Angular js Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular-route.min.js"></script>
+
+    <script src="angular-animate.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.0/sweetalert.min.js"></script>
+
+    <!-- import font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!-- improt css file -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <nav ng-controller="LogoutCon">
+      <ul class="menu">
+        <li class="item"><a href="#/">Home</a></li>
+        <li class="item"><a href="#/films">Main Page</a></li>
+        <li class="item"><a href="#/favpage">Favourite character Page</a></li>
+        <li><button class="btn" ng-click="Logout()">Sign out</button></li>
+      </ul>
+    </nav>
+
+    <div ng-view></div>
+
+    <script type="text/javascript" src="main.js"></script>
+  </body>
+</html>
